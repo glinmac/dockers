@@ -6,7 +6,7 @@ RUN \
 	curl --output /etc/yum.repos.d/hdp.repo http://public-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.3.2.0/hdp.repo && \
 	yum install -y hbase
 
-COPY hbase-site.xml /etc/hbase/conf
+COPY hbase-site.xml /etc/hbase/conf/
 
 ADD start-services.sh /usr/bin/start-services
 
